@@ -132,8 +132,8 @@ def commercial_attributes(data):
 
     # Filters
     st.sidebar.subheader('Select Min Year Built')
-    min_yr_built = data['yr_built'].min()
-    max_yr_built = data['yr_built'].max()
+    min_yr_built = int(data['yr_built'].min())
+    max_yr_built = int(data['yr_built'].max())
 
     # st.write(type(data['yr_built']))
     st.write(type(min_yr_built))
