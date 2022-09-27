@@ -136,7 +136,6 @@ def commercial_attributes(data):
     max_yr_built = int(data['yr_built'].max())
 
     # st.write(type(data['yr_built']))
-    st.write(type(min_yr_built))
     f_yr_built = st.sidebar.slider('Year Built', min_yr_built, max_yr_built, min_yr_built)
 
     # Data Selection
